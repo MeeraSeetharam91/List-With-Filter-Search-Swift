@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A1CDA1B2CF9FD9700EACBB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1CDA1A2CF9FD9700EACBB4 /* AppDelegate.swift */; };
+		6A1CDA1D2CF9FD9700EACBB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1CDA1C2CF9FD9700EACBB4 /* SceneDelegate.swift */; };
+		6A1CDA1F2CF9FD9700EACBB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1CDA1E2CF9FD9700EACBB4 /* ViewController.swift */; };
+		6A1CDA222CF9FD9700EACBB4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6A1CDA212CF9FD9700EACBB4 /* Base */; };
+		6A1CDA242CF9FD9900EACBB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A1CDA232CF9FD9900EACBB4 /* Assets.xcassets */; };
+		6A1CDA272CF9FD9900EACBB4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6A1CDA262CF9FD9900EACBB4 /* Base */; };
+		6A1CDA322CF9FD9900EACBB4 /* Meera_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1CDA312CF9FD9900EACBB4 /* Meera_TaskTests.swift */; };
+		6A1CDA3C2CF9FD9900EACBB4 /* Meera_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1CDA3B2CF9FD9900EACBB4 /* Meera_TaskUITests.swift */; };
+		6A1CDA3E2CF9FD9900EACBB4 /* Meera_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1CDA3D2CF9FD9900EACBB4 /* Meera_TaskUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A1CDA2E2CF9FD9900EACBB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A1CDA0F2CF9FD9700EACBB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A1CDA162CF9FD9700EACBB4;
+			remoteInfo = Meera_Task;
+		};
+		6A1CDA382CF9FD9900EACBB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A1CDA0F2CF9FD9700EACBB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A1CDA162CF9FD9700EACBB4;
+			remoteInfo = Meera_Task;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6A1CDA172CF9FD9700EACBB4 /* Meera_Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meera_Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A1CDA1A2CF9FD9700EACBB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A1CDA1C2CF9FD9700EACBB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6A1CDA1E2CF9FD9700EACBB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6A1CDA212CF9FD9700EACBB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A1CDA232CF9FD9900EACBB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A1CDA262CF9FD9900EACBB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A1CDA282CF9FD9900EACBB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A1CDA2D2CF9FD9900EACBB4 /* Meera_TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Meera_TaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A1CDA312CF9FD9900EACBB4 /* Meera_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meera_TaskTests.swift; sourceTree = "<group>"; };
+		6A1CDA372CF9FD9900EACBB4 /* Meera_TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Meera_TaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A1CDA3B2CF9FD9900EACBB4 /* Meera_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meera_TaskUITests.swift; sourceTree = "<group>"; };
+		6A1CDA3D2CF9FD9900EACBB4 /* Meera_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meera_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A1CDA142CF9FD9700EACBB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A1CDA2A2CF9FD9900EACBB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A1CDA342CF9FD9900EACBB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A1CDA0E2CF9FD9700EACBB4 = {
+			isa = PBXGroup;
+			children = (
+				6A1CDA192CF9FD9700EACBB4 /* Meera_Task */,
+				6A1CDA302CF9FD9900EACBB4 /* Meera_TaskTests */,
+				6A1CDA3A2CF9FD9900EACBB4 /* Meera_TaskUITests */,
+				6A1CDA182CF9FD9700EACBB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A1CDA182CF9FD9700EACBB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A1CDA172CF9FD9700EACBB4 /* Meera_Task.app */,
+				6A1CDA2D2CF9FD9900EACBB4 /* Meera_TaskTests.xctest */,
+				6A1CDA372CF9FD9900EACBB4 /* Meera_TaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A1CDA192CF9FD9700EACBB4 /* Meera_Task */ = {
+			isa = PBXGroup;
+			children = (
+				6A1CDA1A2CF9FD9700EACBB4 /* AppDelegate.swift */,
+				6A1CDA1C2CF9FD9700EACBB4 /* SceneDelegate.swift */,
+				6A1CDA1E2CF9FD9700EACBB4 /* ViewController.swift */,
+				6A1CDA202CF9FD9700EACBB4 /* Main.storyboard */,
+				6A1CDA232CF9FD9900EACBB4 /* Assets.xcassets */,
+				6A1CDA252CF9FD9900EACBB4 /* LaunchScreen.storyboard */,
+				6A1CDA282CF9FD9900EACBB4 /* Info.plist */,
+			);
+			path = Meera_Task;
+			sourceTree = "<group>";
+		};
+		6A1CDA302CF9FD9900EACBB4 /* Meera_TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A1CDA312CF9FD9900EACBB4 /* Meera_TaskTests.swift */,
+			);
+			path = Meera_TaskTests;
+			sourceTree = "<group>";
+		};
+		6A1CDA3A2CF9FD9900EACBB4 /* Meera_TaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6A1CDA3B2CF9FD9900EACBB4 /* Meera_TaskUITests.swift */,
+				6A1CDA3D2CF9FD9900EACBB4 /* Meera_TaskUITestsLaunchTests.swift */,
+			);
+			path = Meera_TaskUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A1CDA162CF9FD9700EACBB4 /* Meera_Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A1CDA412CF9FD9900EACBB4 /* Build configuration list for PBXNativeTarget "Meera_Task" */;
+			buildPhases = (
+				6A1CDA132CF9FD9700EACBB4 /* Sources */,
+				6A1CDA142CF9FD9700EACBB4 /* Frameworks */,
+				6A1CDA152CF9FD9700EACBB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Meera_Task;
+			productName = Meera_Task;
+			productReference = 6A1CDA172CF9FD9700EACBB4 /* Meera_Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A1CDA2C2CF9FD9900EACBB4 /* Meera_TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A1CDA442CF9FD9900EACBB4 /* Build configuration list for PBXNativeTarget "Meera_TaskTests" */;
+			buildPhases = (
+				6A1CDA292CF9FD9900EACBB4 /* Sources */,
+				6A1CDA2A2CF9FD9900EACBB4 /* Frameworks */,
+				6A1CDA2B2CF9FD9900EACBB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A1CDA2F2CF9FD9900EACBB4 /* PBXTargetDependency */,
+			);
+			name = Meera_TaskTests;
+			productName = Meera_TaskTests;
+			productReference = 6A1CDA2D2CF9FD9900EACBB4 /* Meera_TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6A1CDA362CF9FD9900EACBB4 /* Meera_TaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A1CDA472CF9FD9900EACBB4 /* Build configuration list for PBXNativeTarget "Meera_TaskUITests" */;
+			buildPhases = (
+				6A1CDA332CF9FD9900EACBB4 /* Sources */,
+				6A1CDA342CF9FD9900EACBB4 /* Frameworks */,
+				6A1CDA352CF9FD9900EACBB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A1CDA392CF9FD9900EACBB4 /* PBXTargetDependency */,
+			);
+			name = Meera_TaskUITests;
+			productName = Meera_TaskUITests;
+			productReference = 6A1CDA372CF9FD9900EACBB4 /* Meera_TaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A1CDA0F2CF9FD9700EACBB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					6A1CDA162CF9FD9700EACBB4 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					6A1CDA2C2CF9FD9900EACBB4 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 6A1CDA162CF9FD9700EACBB4;
+					};
+					6A1CDA362CF9FD9900EACBB4 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 6A1CDA162CF9FD9700EACBB4;
+					};
+				};
+			};
+			buildConfigurationList = 6A1CDA122CF9FD9700EACBB4 /* Build configuration list for PBXProject "Meera_Task" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A1CDA0E2CF9FD9700EACBB4;
+			productRefGroup = 6A1CDA182CF9FD9700EACBB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A1CDA162CF9FD9700EACBB4 /* Meera_Task */,
+				6A1CDA2C2CF9FD9900EACBB4 /* Meera_TaskTests */,
+				6A1CDA362CF9FD9900EACBB4 /* Meera_TaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A1CDA152CF9FD9700EACBB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A1CDA242CF9FD9900EACBB4 /* Assets.xcassets in Resources */,
+				6A1CDA272CF9FD9900EACBB4 /* Base in Resources */,
+				6A1CDA222CF9FD9700EACBB4 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A1CDA2B2CF9FD9900EACBB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A1CDA352CF9FD9900EACBB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A1CDA132CF9FD9700EACBB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A1CDA1F2CF9FD9700EACBB4 /* ViewController.swift in Sources */,
+				6A1CDA1B2CF9FD9700EACBB4 /* AppDelegate.swift in Sources */,
+				6A1CDA1D2CF9FD9700EACBB4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A1CDA292CF9FD9900EACBB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A1CDA322CF9FD9900EACBB4 /* Meera_TaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A1CDA332CF9FD9900EACBB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A1CDA3E2CF9FD9900EACBB4 /* Meera_TaskUITestsLaunchTests.swift in Sources */,
+				6A1CDA3C2CF9FD9900EACBB4 /* Meera_TaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A1CDA2F2CF9FD9900EACBB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A1CDA162CF9FD9700EACBB4 /* Meera_Task */;
+			targetProxy = 6A1CDA2E2CF9FD9900EACBB4 /* PBXContainerItemProxy */;
+		};
+		6A1CDA392CF9FD9900EACBB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A1CDA162CF9FD9700EACBB4 /* Meera_Task */;
+			targetProxy = 6A1CDA382CF9FD9900EACBB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6A1CDA202CF9FD9700EACBB4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A1CDA212CF9FD9700EACBB4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A1CDA252CF9FD9900EACBB4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A1CDA262CF9FD9900EACBB4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A1CDA3F2CF9FD9900EACBB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6A1CDA402CF9FD9900EACBB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A1CDA422CF9FD9900EACBB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 523S8ZR3ZP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Meera_Task/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learn.Meera-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A1CDA432CF9FD9900EACBB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 523S8ZR3ZP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Meera_Task/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learn.Meera-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6A1CDA452CF9FD9900EACBB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 523S8ZR3ZP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learn.Meera-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meera_Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Meera_Task";
+			};
+			name = Debug;
+		};
+		6A1CDA462CF9FD9900EACBB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 523S8ZR3ZP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learn.Meera-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meera_Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Meera_Task";
+			};
+			name = Release;
+		};
+		6A1CDA482CF9FD9900EACBB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 523S8ZR3ZP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learn.Meera-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Meera_Task;
+			};
+			name = Debug;
+		};
+		6A1CDA492CF9FD9900EACBB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 523S8ZR3ZP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learn.Meera-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Meera_Task;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A1CDA122CF9FD9700EACBB4 /* Build configuration list for PBXProject "Meera_Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A1CDA3F2CF9FD9900EACBB4 /* Debug */,
+				6A1CDA402CF9FD9900EACBB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A1CDA412CF9FD9900EACBB4 /* Build configuration list for PBXNativeTarget "Meera_Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A1CDA422CF9FD9900EACBB4 /* Debug */,
+				6A1CDA432CF9FD9900EACBB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A1CDA442CF9FD9900EACBB4 /* Build configuration list for PBXNativeTarget "Meera_TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A1CDA452CF9FD9900EACBB4 /* Debug */,
+				6A1CDA462CF9FD9900EACBB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A1CDA472CF9FD9900EACBB4 /* Build configuration list for PBXNativeTarget "Meera_TaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A1CDA482CF9FD9900EACBB4 /* Debug */,
+				6A1CDA492CF9FD9900EACBB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A1CDA0F2CF9FD9700EACBB4 /* Project object */;
+}
