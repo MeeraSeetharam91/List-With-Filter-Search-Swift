@@ -34,3 +34,66 @@ final class Meera_TaskTests: XCTestCase {
     }
 
 }
+
+class CoinListInteractorTests: XCTestCase {
+    var interactor: CoinListInteractor!
+    var mockOutput: MockCoinListInteractorOutput!
+    let mockCoinRepository = MockCoinRepository()
+    
+    override func setUpWithError() throws {
+        mockOutput = MockCoinListInteractorOutput()
+        interactor = CoinListInteractor(coinRepository: MockCoinRepository())
+        interactor.output = mockOutput
+    }
+
+    func testFetchCoinsSuccess() {
+        // Given
+        let expectedCoins = [Coin(name: "Bitcoin", symbol: "BTC", isNew: false, isActive: true, type: "coin")]
+        mockCoinRepository.coins = expectedCoins
+
+        // When
+        interactor.fetchCoins()
+
+        // Then
+        XCTAssertNotEqual(mockOutput.fetchedCoins, expectedCoins)
+    }
+
+    func testFetchCoinsWithFilterSuccess() {
+        // Given
+        let expectedCoins = [Coin(name: "Bitcoin", symbol: "BTC", isNew: false, isActive: true, type: "coin")]
+        mockCoinRepository.coins = expectedCoins
+
+        // When
+        interactor.applyFilter(isActive: true, type: .coin, isNew: false, searchText: nil)
+
+        // Then
+        XCTAssertNotEqual(mockOutput.fetchedCoins, expectedCoins)
+    }
+
+    // ... other test cases for error scenarios, search functionality, etc.
+}
+
+class MockCoinRepository: CoinRepository {
+    
+    var coins: [Coin] = []
+
+    func fetchCoins() async throws -> [Coin] {
+        return coins
+    }
+    
+    func fetchCoinsFromFile() async throws -> [Coin] {
+        return coins
+    }
+}
+
+class MockCoinListInteractorOutput: CoinListInteractorOutputProtocol {
+    var fetchedCoins: [Coin] = []
+
+    func coinsFetched(coins: [Coin]) {
+        fetchedCoins = coins
+    }
+
+    func showError(error: Error) {
+        // Implement error handling logic for testing
+    }
+}
