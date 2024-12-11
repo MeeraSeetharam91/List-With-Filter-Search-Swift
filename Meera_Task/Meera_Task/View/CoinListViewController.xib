@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="coinListTableView" destination="4SC-yd-0qh" id="Ful-J3-Opx"/>
                 <outlet property="filterCollectionView" destination="4Y5-Qu-6K1" id="jze-Ad-gBq"/>
+                <outlet property="searchBar" destination="ZwA-gi-668" id="g6L-bW-C0E"/>
                 <outlet property="searchButton" destination="ikV-pt-pew" id="vVv-ID-x1z"/>
                 <outlet property="titlelabel" destination="ckz-Fd-jgB" id="wfg-FZ-XcT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -39,7 +40,22 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                            <connections>
+                                <action selector="searchButtonTapped:" destination="-1" eventType="touchUpInside" id="QLJ-NN-2SD"/>
+                            </connections>
                         </button>
+                        <searchBar hidden="YES" contentMode="redraw" fixedFrame="YES" placeholder="Search" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZwA-gi-668">
+                            <rect key="frame" x="0.0" y="-12" width="393" height="56"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <scopeButtonTitles>
+                                <string>Title</string>
+                                <string>Title</string>
+                            </scopeButtonTitles>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="hxn-Sg-Avy"/>
+                            </connections>
+                        </searchBar>
                     </subviews>
                     <color key="backgroundColor" red="0.43949298469387754" green="0.10696403561424572" blue="0.92923513155262116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>

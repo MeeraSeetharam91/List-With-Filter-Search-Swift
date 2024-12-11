@@ -9,13 +9,11 @@ import Foundation
 
 protocol CoinListInteractorInputProtocol {
     func fetchCoins()
-    func searchCoins(query: String)
-    func applyFilter(isActive: Bool?, type: CryptoType?, isNew: Bool?)
+    func applyFilter(isActive: Bool?, type: CryptoType?, isNew: Bool?, searchText: String?)
 }
 
 protocol CoinListInteractorOutputProtocol: AnyObject {
     func coinsFetched(coins: [Coin])
-    func searchResults(coins: [Coin])
     func showError(error: Error)
 }
 
@@ -37,12 +35,8 @@ class CoinListInteractor: CoinListInteractorInputProtocol {
             }
         }
     }
-
-    func searchCoins(query: String) {
-        // Implement search logic using the coinRepository
-    }
     
-    func applyFilter(isActive: Bool?, type: CryptoType?, isNew: Bool?) {
+    func applyFilter(isActive: Bool?, type: CryptoType?, isNew: Bool?, searchText: String?) {
         Task {
             do {
                 var coins = try await coinRepository.fetchCoinsFromFile()
@@ -54,6 +48,9 @@ class CoinListInteractor: CoinListInteractorInputProtocol {
                 }
                 if let new = isNew {
                     coins = coins.filter({ $0.isNew == new })
+                }
+                if let searchString = searchText {
+                    coins = coins.filter({ $0.name.contains(searchString) || $0.symbol.contains(searchString) })
                 }
                 output?.coinsFetched(coins: coins)
             } catch {

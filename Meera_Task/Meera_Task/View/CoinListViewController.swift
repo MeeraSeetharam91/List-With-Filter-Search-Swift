@@ -13,6 +13,7 @@ class CoinListViewController: UIViewController {
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var coinListTableView: UITableView!
     @IBOutlet weak var filterCollectionView: UICollectionView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     var dataSource = [Coin]()
     var filterDataSource = [FilterSelection]()
@@ -34,22 +35,30 @@ class CoinListViewController: UIViewController {
         coinListTableView.dataSource = self
         coinListTableView.delegate = self
         coinListTableView.register(UINib(nibName: CoinListTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: CoinListTableViewCell.identifier)
+        coinListTableView.allowsSelection = false
         
         filterCollectionView.dataSource = self
         filterCollectionView.delegate = self
         filterCollectionView.register(UINib(nibName: FilterCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: FilterCollectionViewCell.identifier)
 
+        searchBar.delegate = self
+        searchBar.isHidden = true
+        
         for type in Filter.allCases {
             filterDataSource.append(FilterSelection(filterType: type))
         }
         filterCollectionView.reloadData()
+    }
+    @IBAction func searchButtonTapped(_ sender: Any) {
+        self.searchBar.isHidden = false
     }
     
     func refreshData() {
         var isActive: Bool?
         var type: CryptoType?
         var isNew: Bool?
-        
+        var searchText: String?
+
         for item in filterDataSource {
             switch item.filterType {
             case .active:
@@ -96,7 +105,10 @@ class CoinListViewController: UIViewController {
                 }
             }
         }
-        self.presenter.applyFilter(isActive: isActive, type: type, isNew: isNew)
+        if let searchString = self.searchBar.text, !searchString.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            searchText = searchString.trimmingCharacters(in: .whitespacesAndNewlines)
+        }
+        self.presenter.applyFilter(isActive: isActive, type: type, isNew: isNew, searchText: searchText)
     }
 }
 //MARK: TableView delegates
@@ -171,4 +183,22 @@ extension CoinListViewController: UICollectionViewDelegate, UICollectionViewDele
         }
         return CGSize(width: width, height: 30)
     }
+}
+
+extension CoinListViewController: UISearchBarDelegate {
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        searchBar.text = nil
+        searchBar.isHidden = true
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            self.refreshData()
+        } else {
+            self.refreshData()
+        }
+    }
+
 }
